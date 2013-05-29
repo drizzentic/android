@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/svDiseaseContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*" >
+
+            <TextView
+                android:id="@+id/tvHelp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="DoctorPro is an application designed to enable efficient doctor-patient interaction whereby a patient may have many doctors with varing specialty and keep in touch with all of them from the application.
+        The application also helps provide basic first aid information to the user to enable him/her carry out firstaid to a nearby victim or to oneself if applicable.
+        
+        Another part of the application is disease database that shows users of various diseases and symtoms and their remedy where applicable.
+        Your id enables the doctor to identify you so dont lose it else you may not be able to use the system. The password may be changed after the first log-in to the system at the end of this help.
+        
+        Have fan using the system." />
+            
+            
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

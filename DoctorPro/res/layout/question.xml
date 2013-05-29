@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+     <ScrollView
+        android:id="@+id/svDiseaseContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+<TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ask your doctor any medical question" />
+
+    <EditText
+        android:id="@+id/etTopic"
+        android:layout_width="match_parent"
+                android:hint="Topic"
+        android:layout_height="wrap_content" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etQuestion"
+        android:layout_width="match_parent"
+        android:hint="Enter your question here"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bSubmitQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="SUBMIT" />
+    <Button
+        android:id="@+id/bViewAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="View previous QA" />
+    </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.patrickblack.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/diseaseicon"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".home" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/DoctorLocation"
+            android:name=".Location" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Location" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Staff"
+            android:name=".Staff" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Staff" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Core Values"
+            android:name=".CoreValues" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.CoreValues" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Directory"
+            android:name=".Directory" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Directory" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="About"
+            android:name=".About" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.About" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="History"
+            android:name=".History" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.History" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Patient Edu"
+            android:name=".PatientEdu" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.PatientEdu" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Services"
+            android:name=".Services" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Services" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Qualification"
+            android:name=".Qualification" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Qualification" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Clinic Advertisements"
+            android:name=".ClinicAdverts" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.ClinicAdverts" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Emergency"
+            android:name=".Emergency" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Emergency" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Information"
+            android:name=".Information" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Information" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Medication"
+            android:name=".Medication" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Medication" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Lab Result"
+            android:name=".LabResult" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.LabResult" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Questions"
+            android:name=".Question" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Question" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Appointment"
+            android:name=".Appointment" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Appointment" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Feedback"
+            android:name=".Feedback" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Feedback" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Help"
+            android:name=".Help" >
+            <intent-filter >
+                <action android:name="com.patrickblack.app.Help" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

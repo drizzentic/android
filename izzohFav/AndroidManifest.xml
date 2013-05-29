@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.izzoh.IzzohFav"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".Splash" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".IzzohFavActivity" >
+            <intent-filter >
+                <action android:name="com.izzoh.IzzohFav.IzzohFavActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Menu" >
+            <intent-filter >
+                <action android:name="com.izzoh.IzzohFav.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name=".TextPlay" >
+            
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Email" >
+            
+        </activity>
+        <activity
+            android:label="Camera App"
+            android:name=".Camera" 
+            android:screenOrientation="portrait" >
+            
+            
+        </activity>
+        <activity
+            android:label="Data app"
+            android:name=".Data" 
+             >
+            
+            
+        </activity>
+        <activity
+            android:label="Opened Class"
+            android:name=".openedClass" 
+            >
+            
+            
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medic.map"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:icon="@drawable/medic2"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:label="@string/app_name"
+            android:name=".Splash" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Login"
+            android:name=".Login" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Login" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Select"
+            android:name=".Select" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Select" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Basic disease info"
+            android:name=".Ignore" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Ignore" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Request Appointment"
+            android:name=".CreateApp" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.CreateApp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Select Doctor"
+            android:name=".Doctor" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Doctor" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".home" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.home" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="View Appointments"
+            android:name=".ViewApp" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.ViewApp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Location"
+            android:name=".Location" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Location" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Staff"
+            android:name=".Staff" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Staff" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Staff_child"
+            android:name=".Staff_child" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Staff_child" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Core Values"
+            android:name=".CoreValues" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.CoreValues" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Directory"
+            android:name=".Directory" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Directory" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="About"
+            android:name=".About" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.About" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="History"
+            android:name=".History" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.History" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Patient Edu"
+            android:name=".PatientEdu" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.PatientEdu" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Common Diseases"
+            android:name=".Common" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Common" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Common Diseases"
+            android:name=".Common_child" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Common_child" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Skin Problems"
+            android:name=".Skin" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Skin" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Skin Problems"
+            android:name=".Skin_child" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Skin_child" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Serious Diseases"
+            android:name=".Serious" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Serious" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Serious Diseases"
+            android:name=".Serious_child" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Serious_child" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Worms"
+            android:name=".Worms" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Works" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="QA"
+            android:name=".Qa" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Qa" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Worms"
+            android:name=".Worms_child" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Worms_child" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Services"
+            android:name=".Services" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Services" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Qualification"
+            android:name=".Qualification" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Qualification" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Clinic Advertisements"
+            android:name=".ClinicAdverts" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.ClinicAdverts" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Emergency"
+            android:name=".Emergency" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Emergency" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Information"
+            android:name=".Information" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Information" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Firstaid"
+            android:name=".Firstaid" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Firstaid" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Medication"
+            android:name=".Medication" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Medication" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Lab Result"
+            android:name=".LabResult" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.LabResult" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Questions"
+            android:name=".Question" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Question" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Appointment"
+            android:name=".Appointment" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Apppointment" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Feedback"
+            android:name=".Feedback" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Feedback" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Help"
+            android:name=".Help" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Help" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="Settings"
+            android:name=".Settings" >
+            <intent-filter >
+                <action android:name="com.patrickblack.map.Settings" />
+            </intent-filter>
+        </activity>
+        </application>
+
+</manifest>

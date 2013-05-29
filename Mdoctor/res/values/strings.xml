@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Mdoctor!</string>
+    <string name="app_name">Mdoctor</string>
+    <string name="menu1">Gullet</string>
+    <string name="menu2">Nyongo</string>
+
+</resources>

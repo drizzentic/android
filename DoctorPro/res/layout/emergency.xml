@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on the button to make an emergency call" />
+
+    <Button
+        android:id="@+id/bAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambulance" />
+
+    <Button
+        android:id="@+id/bFire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fire brigade" />
+
+</LinearLayout>

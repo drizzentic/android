@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FirstAidActivity!</string>
+    <string name="app_name">FirstAid</string>
+    <string name="DoctorLocation">GeoLocation</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTest1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="If you have a question or a comment abou the system, feel free to notify us by writing to us. Write your message and click send and its done." />
+    
+    <TextView
+        android:id="@+id/tvTest2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Topic:" />
+
+    <EditText
+        android:id="@+id/etEmailTopic"
+        android:layout_width="match_parent"
+        android:hint="Topic"
+        android:layout_height="wrap_content" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvEmailTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body:" />
+
+    <EditText
+        android:id="@+id/etEmailBody"
+        android:layout_width="match_parent"
+        android:hint="Body"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bEmailSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>

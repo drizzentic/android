@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="For medical security reasons, you need to log in with your medical patient id given by your doctor." />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Your id:" />
+
+    <EditText
+        android:id="@+id/etPatientId"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Enter password given by your doctor:" />
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="250px"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvFailure"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/bGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="If you don't have the patient id, you can't use the system: however you can access the first aid and disease information. Just click on IGNORE:" />
+
+    <Button
+        android:id="@+id/bIgnore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="IGNORE" />
+
+</LinearLayout>

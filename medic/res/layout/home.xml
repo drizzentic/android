@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ScrollView
+                        android:id="@+id/ScrollViewAllScores"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/TableLayout01"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="*" >
+
+                            <TableRow
+                                android:id="@+id/TableRow01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/locationicon" />
+
+                                <ImageView
+                                    android:id="@+id/ivStaff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/stafficon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="LOCATION" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="STAFF" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/TableRow02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivCoreValues"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/coreicon" />
+
+                                <ImageView
+                                    android:id="@+id/ivDirectory"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/directoryicon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="CORE VALUES" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="DIRECTORY" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/TableRow03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivAbout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10sp"
+                                    android:src="@drawable/about_icon" />
+
+                                <ImageView
+                                    android:id="@+id/ivHistory"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10sp"
+                                    android:src="@drawable/historyicon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="ABOUT" />
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="HISTORY" />
+                            </TableRow>
+                        </TableLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ScrollView
+                        android:id="@+id/ScrollViewtab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/TableLayout02"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="*" >
+
+                            <TableRow
+                                android:id="@+id/TableRow04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivPatientEdu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/patientedu" />
+
+                                <ImageView
+                                    android:id="@+id/ivService"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/serviceicon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="PATIENT EDU." />
+
+                                <TextView
+                                    android:id="@+id/textView22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="SERVICES" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/TableRow05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivQualification"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/qualificationcon" />
+
+                                <ImageView
+                                    android:id="@+id/ivAdvertisement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/advertisementicon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="SPECIALTY" />
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="CLINIC UPDATES" />
+                            </TableRow>
+                        </TableLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ScrollView
+                        android:id="@+id/Scrolltab3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/TableLayout03"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="*" >
+
+                            <TableRow
+                                android:id="@+id/TableRow06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivEmergency"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/emergencyicon" />
+
+                                <ImageView
+                                    android:id="@+id/ivInformation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/firstaid" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="EMERGENCY" />
+
+                                <TextView
+                                    android:id="@+id/textView32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="FIRST-AID" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/TableRow07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivMedication"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/medicationicon" />
+
+                                <ImageView
+                                    android:id="@+id/ivLabResult"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/graphicon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="MEDICATION" />
+
+                                <TextView
+                                    android:id="@+id/textView34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="LAB REPORT" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/TableRow08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivQuestion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10sp"
+                                    android:src="@drawable/mobileicon" />
+
+                                <ImageView
+                                    android:id="@+id/ivAppointment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10sp"
+                                    android:src="@drawable/appointment_icon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="QUESTION" />
+
+                                <TextView
+                                    android:id="@+id/textView36"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="APPOINTMENT" />
+                            </TableRow>
+                        </TableLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ScrollView
+                        android:id="@+id/ScrollViewtab4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/TableLayout04"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="*" >
+
+                            <TableRow
+                                android:id="@+id/TableRow09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivFeedback"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/feedbackicon" />
+
+                                <ImageView
+                                    android:id="@+id/ivHelp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/helpicon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView41"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="FEEDBACK" />
+
+                                <TextView
+                                    android:id="@+id/textView42"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="HELP" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivSettings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="10dp"
+                                    android:src="@drawable/helpicon" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/trText96"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textView43"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:text="SETTINGS" />
+                            </TableRow>
+                        </TableLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
